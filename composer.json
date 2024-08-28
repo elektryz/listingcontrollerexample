@@ -1,0 +1,20 @@
+{
+  "name": "init/listingcontrollerexample",
+  "type": "prestashop-module",
+  "authors": [
+    {
+      "name": "Kamil Góralczyk",
+      "homepage": "https://kamilgoralczyk.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "inIT\\ListingControllerExample\\": "src/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "8.1.0"
+    }
+  }
+}
