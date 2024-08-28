@@ -56,7 +56,9 @@ class ProductProvider
             $orderByPrefix = 'm';
             $orderBy = 'name';
         } elseif ($orderBy === 'position') {
-            $orderByPrefix = 'cp';
+            // We do not have category.position available so just use date_add
+            $orderByPrefix = 'p';
+            $orderBy = 'date_add';
         }
 
         if ($orderBy === 'price') {
